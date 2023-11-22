@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    color: white;
+    margin: 20px;
+    height: 100px;
+}
+h2 {
+    margin: 20px;
+}
+footer p {
+    font-size: 10px;
+    
+    height: 30px;
+}
+p{
+    margin: 28px;
+}
+footer{
+    background-color: gray;
+   
+}
+header{
+    background-color: blue;
+}

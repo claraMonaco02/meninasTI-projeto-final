@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meninas TI Projeto Final</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="logo"><img src="logo.png" /></div>
+        <div class="logo"><img src="img/TIlogo.png" /></div>
         <div class="menu"><nav>
             <ul>
                 <li><a href="#" >Home</a></li>
                 <li><a href="#sobre" >Sobre</a></li>
-                <li><a href="#" >Empresa</a></li>
+                <li><a href="#" >Objetivo</a></li>
                 <li><a href="#" >Contato</a></li>
             </ul>
         </nav></div>
@@ -27,23 +30,56 @@
     </header>
     <section class="banner">
         <div class="conteudo">
-            <h2>Titulo</h2>
-            <p>Descrição</p>
+            <h2>TI nas Escolas Públicas</h2>
+            
         </div>
-        <div class="botao">Clique aqui</div>
     </section>
     <section class="sobre" id="sobre">
         <div class="imagem">
             <img src="empresa.jpg">
         </div>
         <div class="conteudo" >
-            <h2>Titulo sobre</h2>
+            <h2>Projeto "TI nas Escolas Públicas"</h2>
             <p>
-                O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas de Letraset, que continham passagens com Lorem Ipsum, e mais recentemente com os programas de publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum.
-            </p>
+                Idealizado por Clara Monaco, este projeto tem como objeto atender ás demandas do mercado em constante crescimento do mercado 
+                de Tecnologia da Informação. Além disso, busca promover a inclusão de adolescentes do ensino médios de escolas públicas e estaduais,
+                fortalecendo aqueles que têm menos oportunidades, estimulando o desenvolvimento de novos conhecimentos e interesses, e abrindo caminhos
+                para futuras oportunidades.
+                Concluindo, este projeto é uma inciativa importante que não apenas supre as demandas do mercado de TI, mas também empodera e 
+                capacita os adolescentes de escolas públicas e  estaduais, proporcionando novas perspectivas e abrindo portas para um 
+               futuro promissor.
+            <h2>Oficinas do Projeto</h2>
+            <ul>
+                <li>Logica e Programação</li>
+                <li>Desenvolvimento Web front End</li>
+                <li>JavaScript</li>
+             </ul>
         </div>
     </section>
-    <section class="produtos">
+    <div class="objetivo"></div>
+    <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+            <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+              <h2>Importância da TI nas escolas</h2>
+              <p> TI nas escolas é imporante porque ajuda a melhorar a qualidade da educação,
+                facilitando o acesso á informação, promove a interação e colaboração entre os alunos e professores,
+                também prepara os estudantes para o mundo digital.</p>
+            </div>
+          </div>
+        <div class="col-md-6">
+            <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+              <h2>Objetivo do Projeto</h2>
+              <p>O objetivo do Projeto é implementar um projeto de TI nas escolas públicas para capicitar os alunos e professores,
+                promovendo aulas interativas, com acesso a tecnologia e estimulando habilidades digitais para fornecelos boas
+                oportunidades futuramente. E assim poder dar uma opotunidade diferente para os alunos, pois algumas escolas 
+                públicas não fornecem tantas oportunidades para os seus alunos. Concluindo, os alunos poderam se interessar 
+                pela TI e poderam buscar mais conhecimento sobre a área. Ou seja, buscamos capacitar a nova gereção com 
+                habilidades digitais essenciais, oferecendo recursos, treinamento e suporte, para que possam enfrentar 
+                desafios e oportunidades do mundom digital com cofiança, competência e interesse.</p>
+              
+            </div>
+    </div>
+   <!--  <section class="produtos">
         <div class="produtos">
             <img src="200.png">
             <h3>Nome do produto</h3>
@@ -72,27 +108,61 @@
             <div class="valor">R$ 99,99</div>
             <div class="botao">Compre agora</div>
         </div>
-    </section>
+    </section> -->
+    
     <section class="jumbotron"> 
-        <div class="banner-pequeno dark">
-            <h3>Change the background</h3>
-            <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.
-
-            </p>
-            <button class="btn" type="button">
-                Clique aqui
-            </button>
-        </div>
         <div class="banner-pequeno">
-            <h3>Change the background</h3>
-            <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.
+            <h3>Preencha o formulário abaixo para se inscrever-se</h3>
+            <form action="" id="form">
+             <input type="text" placeholder="Seu nome" name="nome" id="nome" />
+             <input type="tel" placeholder="Seu telefone" name="telefone" id="telefone" />
+             <input type="email" placeholder="Seu email" name="email" id="email" />
+             <input type="cpf" placeholder="Seu cpf" name="cpf" id="cpf" />
+             <input type="date" placeholder="Sua data de nascimento" name="data de nascimento" id="data" />
+             <input type="end" placeholder="Seu endereço" name="endereço" id="endereço" />
+             <input type="submit" value="Enviar" id="enviar" />
+                
+             </form>
 
-            </p>
-            <button class="btn" type="button">
-                Clique aqui
-            </button>
         </div>
     </section>
-    <footer></footer>
+    <footer>
+        <div class="espacamento"> &nbsp; </div>
+        <div class="footer-interno">
+            <div class="footer-coluna1 footer-coluna">
+                <img src="logo.png">
+                <p>C 20222</p>
+            </div>
+            <div class="footer-coluna2 footer-coluna">
+            <ul>
+                <li class="titulo">Section</li>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+                <li>Item 6</li>
+            </ul>
+        </div>
+            <div class="footer-coluna3 footer-coluna">
+                <li class="titulo">Section</li>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+                <li>Item 6</li>
+            </div>
+            <div class="footer-coluna4 footer-coluna">
+                <li class="titulo">Section</li>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+                <li>Item 6</li>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
