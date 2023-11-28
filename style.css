@@ -7,6 +7,7 @@ header {
     width: 100%;
     min-height: 64px;
     justify-content: space-around;
+    border-bottom: 1px solid #0e0e0e;
 }
 
 .menu nav ul, .social ul {
@@ -28,3 +29,191 @@ header {
     text-decoration: none;
     color: #0e0e0e;
 }
+section.banner {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat:no-repeat;
+   
+}
+section.banner .conteudo {
+    background-color: #fefefe8a;
+    padding: 12px;
+}
+
+section.banner .botao {
+    margin: 12px;
+    background-color: #fefefe;
+    padding: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+section.sobre{
+    width: 100%;
+    margin: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+section.sobre div {
+    width: 50vw;
+    overflow: hidden;
+}
+
+section.sobre .imagem img {
+    width: 100%;
+}
+
+section.sobre .conteudo {margin: 12px 24px;}
+
+section.produtos {
+    width: 100%;
+    margin: 12px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+section.jumbotron {
+    width: 10      0%;
+    display: flex;
+    flex-direction: row;
+    margin: 90px auto;
+    gap: 22px;
+    justify-content: center;
+}
+
+section.jumbotron div.banner-pequeno {
+    margin: 0px 25px;
+    padding: 42px;
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+    background: #fafafa;
+}
+
+section.jumbotron div.banner-pequeno h3, section.formulario h3 {
+    font-size: 25px;
+    line-height: 0;
+}
+
+section.jumbotron div.banner-pequeno p, section.formulario p {
+font-size: 18px;
+line-height: 22px;
+}
+
+section.jumbotron div.banner-pequeno button, form#form input[type="submit"]{
+    background: transparent;
+    border: 1px solid #0f0f00;
+    border-radius: 5px;
+    padding: 6px 12px;
+    height: 32px;
+    font-size: 18px;
+}
+section.jumbotron div.banner-pequeno.dark{
+    border-color: transparent;
+    background-color: #212529bd;
+
+}
+
+section.jumbotron div.banner-pequeno.dark button
+section.jumbotron div.banner-pequeno.dark p
+section.jumbotron div.banner-pequeno.dark h3{
+    color:#fefefe;
+    border-color:#fefefe;
+    
+}
+
+section.jumbotron div.banner-pequeno button:hover,  form#form input[type="submit"]:hover{
+    background-color: #212529bd;
+    color: #fefefe;
+    border-color: #fefefe;
+    cursor: pointer;
+
+}
+section.jumbotron div.banner-pequeno.dark button:hover{
+    background-color: #fefefe;
+    color: #212529bd;
+    border-color: #212529bd;
+}
+section.formulario form#form input{
+    width: 100%;
+    padding: 6px;
+    margin: 6px auto;
+}
+section.formulario form#form{
+    width: 45vw;
+    margin: 1rem auto;
+}
+section.formulario form#form input[type="submit"] {
+    width: 180px;
+    margin: 6px auto 6px 0px;
+}
+section.formulario h3, section.formulario p {text-align: center;}
+
+footer div.espacamento {
+    width: 90%;
+    height: 42px;
+    border-bottom: 1px solid #adadad63;
+    margin: 0px auto;
+}
+footer div.footer-interno {
+    display: flex;
+    flex-direction: row; 
+    gap: 6px;
+    padding: 24px;
+    margin: 12px auto;
+    justify-content: space-around;
+    color: #7c7c7cc7;
+}
+footer div.footer-interno .footer-coluna1 img {
+    width: 95px;
+}
+footer .footer-interno .footer-coluna ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+
+}
+footer .footer-interno .footer-coluna ul li {
+    margin: 6px auto;
+}
+footer .footer-interno .footer-coluna ul li.titulo {
+    font-size: 22px;
+    font-weight: 800;
+    color: #363636;
+}
+
+
+form#form {
+    display: flex;
+    flex-direction: column;
+}
+
+form#form {}
+
+form#form input {
+    margin: 6px 0px;
+    height: 25px;
+}
+.objetivo{
+    margin: 100px;
+}
+
+.h-30 {
+    height: 50% !important;
+  }
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+ 
