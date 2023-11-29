@@ -22,3 +22,28 @@ footer{
 header{
     background-color: blue;
 }
+
+
+
+header {
+    display: flex;
+    width: 100%;
+    min-height: 64px;
+    justify-content: space-around;
+    border-bottom: 3px solid #064ca8;
+    background-color: #3f82db;
+   
+   }
+   header:after {
+       content: '';
+       position: absolute;
+       left: 50%;
+       top: 13%;
+       width: 0;
+       height: 0;
+       border-left: 8px solid transparent;
+       border-right: 8px solid transparent;
+       border-top: 8px solid #2861ad;
+       clear: both;
+       
+   }

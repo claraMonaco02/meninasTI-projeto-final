@@ -78,7 +78,7 @@ console.log(multiplicacao);
 var numero = 6;
 
 console.log(numero % 2);*/
-
+/*
 var n1 = 2;
 var n2 = 44456
 var n3 =  2
@@ -146,7 +146,34 @@ console.log(novaFrase);*/
  listaDeCompras[listaDeCompras.length]= "cebola";
  listaDeCompras[1] = "tomate";
 
- 
+ //declaração de variáveis
+const header = document.createElement("header");
+const content = document.createElement("main");
+const footer = document.createElement("footer");
+
+// adiciona conteúdo ao cabeçalho
+header.innerHTML = ´
+<h1>cabeçalho</h1>
+<p>este é o cabeçalho da página.</p>
+´;
+
+// adiciona conteúdo ao conteúdo
+content.innerHTML = ´  
+  <h2>Conteúdo</h2>
+  <p>este é o conteudo da pagina</p>
+´;
+
+// adiciona conteúdo ao rodapé
+footer.innerHTML= ´
+       <p>rodapé</p>
+´;
+
+// adiciona os elementos á página
+document.body.appendChild(header);
+document.body.appendChild(content);
+document.body.appendChild(footer);
+
+
  
 
   

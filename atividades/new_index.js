@@ -100,18 +100,17 @@ function imprimeNomesComRturn(nome){
 console.log(imprimeNomesComRturn("nome1"));
 console.log(imprimeNomesComRturn("nome2"));
 console.log(imprimeNomesComRturn("nome3"));
-*/
 
 
-/* function recebeArray(lista = []){
+
+function recebeArray(lista = []){
     var arrayFinal = [];
     arrayFinal[0] = lista[lista.length -1];
     arrayFinal[1] = lista[0];
     console.log(arrayFinal);
 }
 var lista = [1,2,3,4,5,6,7,8,9];
-recebeArray(lista);
- */
+recebeArray(lista);*/
 
 //declaração de variáveis
 const header = document.createElement("header");
@@ -119,56 +118,25 @@ const content = document.createElement("main");
 const footer = document.createElement("footer");
 
 // adiciona conteúdo ao cabeçalho
-header.innerHTML = '<h1>cabeçalho</h1> <p>este é o cabeçalho da página.</p>';
+header.innerHTML = ´
+<h1>cabeçalho</h1>
+<p>este é o cabeçalho da página.</p>
+´;
 
 // adiciona conteúdo ao conteúdo
-content.innerHTML = '<h2>Conteúdo</h2><p>este é o conteudo da pagina</p>';
+content.innerHTML = ´
+  <h2>Conteúdo</h2>
+  <p>este é o conteudo da pagina</p>
+´;
 
 // adiciona conteúdo ao rodapé
-footer.innerHTML= '<p>rodapé</p>';
+footer.innerHTML= ´
+       <p>rodapé</p>
+´;
 
 // adiciona os elementos á página
 document.body.appendChild(header);
 document.body.appendChild(content);
 document.body.appendChild(footer);
 
-// aplica estilos ao cabeçalho
-header.style.backgroundColor = "#ccc";
-header.style.padding = "20px";
 
-//aplica estilos ao rodapé
-footer.style.backgroundColor = "#ccc";
-footer.style.padding = "10px";
-
-
-
-const container = document.querySelector("main");
-const linhas = [];
-const cores = ["#fff", "#ccc"];
-
-const container = document.querySelector("main");
-const linhas = [];
-const cores = ["#fff", "#ccc"];
-
-for (let i = 0; i < 10; i++) {
-  const linha = document.createElement("div");
-  linha.classList.add("linha");
-  linha.innerHTML = `
-    <h3>Linha ${i + 1}</h3>
-    <p>Este é o conteúdo da linha ${i + 1}.</p>
-  `;
-  container.appendChild(linha);
-
-  linhas.push(linha);
-}
-// Alterna as cores das linhas
-function alternarCores() {
-  for (let i = 0; i < linhas.length; i++) {
-    linhas[i].style.backgroundColor = cores[i % 2];
-  }
-}
-alternarCores();
-// Define um evento para alternar as cores
-//container.addEventListener("click", alternarCores);
-
-    
