@@ -1,0 +1,30 @@
+.logo img {
+    width: 128px;
+}
+
+header {
+ display: flex;
+ width: 100%;
+ min-height: 64px;
+ justify-content: space-around;
+ border-bottom: 3px solid #064ca8;
+ background-color: #3f82db;
+
+}
+header.header ul {
+
+    list-style: none;
+    display: flex;
+    width: auto;
+    gap: 26px;
+}
+
+header.header ul li a {
+    color: #0e0e0e;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+}
+header.header {
+    border-bottom: 2px solid #0e0e0e4a;
+}
