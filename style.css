@@ -1,32 +1,38 @@
 .logo img {
     width: 128px;
 }
+
 header {
-    display: flex;
-    width: 100%;
-    min-height: 64px;
-    justify-content: space-around;
-    border-bottom: 3px solid #064ca8;
-    background-color: #3f82db;
-   
-   }
-   header:after {
-       content: '';
-       position: absolute;
-       left: 50%;
-       top: 13%;
-       width: 0;
-       height: 0;
-       border-left: 8px solid transparent;
-       border-right: 8px solid transparent;
-       border-top: 8px solid #2861ad;
-       clear: both;
-       
-   }
+ display: flex;
+ width: 100%;
+ min-height: 64px;
+ justify-content: space-around;
+ border-bottom: 3px solid #064ca8;
 
 
+}
+/*header:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 16svh;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #2861ad;
+    clear: both;
+}*/
 
-
+.single-card {
+    min-height: 270px !important;
+    --bs-body-bg-rgb: 0,54,82;
+    --bs-bg-opacity: 1;
+    color: #fefefe;
+}
+section.sobre .conteudo p {
+    padding-left: 2rem;
+}
 .menu nav ul, .social ul {
     list-style: none;
     display: flex;
@@ -44,8 +50,9 @@ header {
 
 .menu a, .social a {
     text-decoration: none;
-    color: #0e0e0e;
+    color: #000000;
 }
+
 section.banner {
     width: 100%;
     height: 90vh;
@@ -62,8 +69,8 @@ section.banner {
 section.banner .conteudo {
     background-color: #fefefe8a;
     padding: 12px;
+    
 }
-
 section.banner .botao {
     margin: 12px;
     background-color: #fefefe;
@@ -73,12 +80,12 @@ section.banner .botao {
 }
 
 section.sobre{
-    width: 100%;
-    margin: 12px;
     display: flex;
     flex-direction: row;
+    background-color: #2861ad;
+    padding: 2px 0;
 }
-
+section.cards{background-color: #2861ad;}
 section.sobre div {
     width: 50vw;
     overflow: hidden;
@@ -88,7 +95,10 @@ section.sobre .imagem img {
     width: 100%;
 }
 
-section.sobre .conteudo {margin: 12px 24px;}
+section.sobre .conteudo {
+    margin: 12px 24px;
+    color: #fff;
+}
 
 section.produtos {
     width: 100%;
@@ -150,7 +160,7 @@ section.jumbotron div.banner-pequeno.dark h3{
 }
 
 section.jumbotron div.banner-pequeno button:hover,  form#form input[type="submit"]:hover{
-    background-color: #212529bd;
+    background-color: #22262abd;
     color: #fefefe;
     border-color: #fefefe;
     cursor: pointer;
@@ -161,10 +171,10 @@ section.jumbotron div.banner-pequeno.dark button:hover{
     color: #212529bd;
     border-color: #212529bd;
 }
-section.formulario form#form input{
+section.formulario form#form {
     width: 100%;
     padding: 6px;
-    margin: 6px auto;
+    margin: 11px 0 0 ;
 }
 section.formulario form#form{
     width: 45vw;
@@ -182,17 +192,22 @@ footer div.espacamento {
     border-bottom: 1px solid #adadad63;
     margin: 0px auto;
 }
-footer div.footer-interno {
+footer.footer-interno {
     display: flex;
     flex-direction: row; 
     gap: 6px;
     padding: 24px;
-    margin: 12px auto;
+    margin: 4px auto;
     justify-content: space-around;
-    color: #7c7c7cc7;
+    color:#fefefe;
+    background-color: #003652;
 }
-footer div.footer-interno .footer-coluna1 img {
+footer.footer-interno .footer-coluna1 img {
     width: 95px;
+}
+footer.footer-interno ul li.titulo{
+    font-size:26px;
+    font-weight: bold;
 }
 footer .footer-interno .footer-coluna ul {
     list-style: none;
@@ -206,7 +221,7 @@ footer .footer-interno .footer-coluna ul li {
 footer .footer-interno .footer-coluna ul li.titulo {
     font-size: 22px;
     font-weight: 800;
-    color: #363636;
+    color: #fefefe;;
 }
 
 
@@ -215,7 +230,7 @@ form#form {
     flex-direction: column;
 }
 
-form#form {}
+
 
 form#form input {
     margin: 6px 0px;
@@ -231,6 +246,79 @@ form#form input {
 @media only screen and (max-width: 600px) {
     body {
       background-color: lightblue;
-    }
-  }
- 
+    } 
+}
+
+section.contato{
+    color: #fff;
+    background: #1e6588;
+}
+.subtitulo{
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+footer .footer-coluna ul li a {
+    color: #fefefe;
+    text-decoration: none;
+}
+
+.menu nav ul li {
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.menu nav ul li {
+    border-left: 2px solid #8d8d8d99;
+    width: 100px;
+}
+.menu nav ul li:first-child {
+    border-left: none;
+}
+.inputs {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 26px;
+    gap: 18px;
+}
+.inputs textarea {
+    height: 120px;
+    border-radius: 30px
+}
+
+.inputs input, .inputs textarea {
+    border-radius: 50px;
+    border: none;
+    height: 60px;
+    background-color: #003652;
+    color: #2d2c2c;
+    padding: 18px;
+}
+div.btn{text-align: -webkit-center;}
+button.btn {
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    float: none;
+    height: 53px;
+    width: 51%;
+    border-radius: 40px;
+    background: linear-gradient(245deg,#ffd400,#fba200);
+}
+section.imagem5 {
+    background-image: url(img/imagem5.png);
+    background-position: center 105%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: auto;
+    margin: 18px 0px 0px 0px;
+    padding: 20px 20px 16vh 20px;
+}
+section.imagem5 p, section.imagem5 h2{
+    padding:2vw;
+}

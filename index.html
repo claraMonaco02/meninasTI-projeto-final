@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meninas TI Projeto Final</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/60513040aa.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.tiny.cloud/1/API_KEY/tinymce/6/tinymce.min.js"></script>
 </head>
 <body>
     <header>
         <div class="logo"><img src="img/TIlogo.png" /></div>
         <div class="menu"><nav>
-            <ul>
-                <li><a href="#" >Home</a></li>
-                <li><a href="#sobre" >Sobre</a></li>
-                <li><a href="#" >Objetivo</a></li>
-                <li><a href="#" >Contato</a></li>
+            <ul class="list-unstyled d-flex flex-row gap-4 mb-0 pb-0">
+                <li><a href="#">Home</a></li>
+                <li><a href="#sobre" >Projeto</a></li>
+                <li><a href="#objetivo" >Oficinas</a></li>
+                <li><a href="#contato" >Contato</a></li>
             </ul>
         </nav></div>
         <div class="social">
@@ -38,7 +39,7 @@
         <div class="imagem">
             <img src="empresa.jpg">
         </div>
-        <div class="conteudo" >
+        <div class="conteudo"  >
             <h2>Projeto "TI nas Escolas Públicas"</h2>
             <p>
                 Idealizado por Clara Monaco, este projeto tem como objeto atender ás demandas do mercado em constante crescimento do mercado 
@@ -56,113 +57,117 @@
              </ul>
         </div>
     </section>
-    <div class="objetivo"></div>
-    <div class="row align-items-md-stretch">
-        <div class="col-md-6">
-            <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-              <h2>Importância da TI nas escolas</h2>
-              <p> TI nas escolas é imporante porque ajuda a melhorar a qualidade da educação,
+    <section class="cards col p-2 d-flex flex-column flex-md-row justify-content-around gap-3 align-items-center p-4" id="objetivo">
+        <div class="single-card rounded-5 col col-md-3 bg-body d-flex flex-nowrap flex-column gap-1 justify-content-center p-3">
+            <h2>Objetivo do Projeto</h2>
+            <p>
+                Projeto de TI nas escolas públicas capacita alunos e professores para o futuro
+                O objetivo é promover aulas interativas com acesso a tecnologia e estimular habilidades digitais.
+                O projeto busca oferecer oportunidades diferentes para os alunos e capacitar a nova geração para o mundo digital.</p>
+            <img src="" />
+        </div>
+        <div class="single-card rounded-5 col col-md-3 bg-body d-flex flex-nowrap flex-column gap-1 justify-content-center p-3">
+            <h2>Importância da TI nas escolas</h2>
+            <p> TI nas escolas é imporante porque ajuda a melhorar a qualidade da educação,
                 facilitando o acesso á informação, promove a interação e colaboração entre os alunos e professores,
-                também prepara os estudantes para o mundo digital.</p>
-            </div>
-          </div>
-        <div class="col-md-6">
-            <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-              <h2>Objetivo do Projeto</h2>
-              <p>O objetivo do Projeto é implementar um projeto de TI nas escolas públicas para capicitar os alunos e professores,
-                promovendo aulas interativas, com acesso a tecnologia e estimulando habilidades digitais para fornecelos boas
-                oportunidades futuramente. E assim poder dar uma opotunidade diferente para os alunos, pois algumas escolas 
-                públicas não fornecem tantas oportunidades para os seus alunos. Concluindo, os alunos poderam se interessar 
-                pela TI e poderam buscar mais conhecimento sobre a área. Ou seja, buscamos capacitar a nova gereção com 
-                habilidades digitais essenciais, oferecendo recursos, treinamento e suporte, para que possam enfrentar 
-                desafios e oportunidades do mundom digital com cofiança, competência e interesse.</p>
-              
-            </div>
-    </div>
-   <!--  <section class="produtos">
-        <div class="produtos">
-            <img src="200.png">
-            <h3>Nome do produto</h3>
-            <p>Descrição do produto</p>
-            <div class="valor">R$ 99,99</div>
-            <div class="botao">Compre agora</div>
+                também prepara os estudantes para o mundo digital</p>
+            <img src="" />
         </div>
-        <div class="produtos">
-            <img src="200.png">
-            <h3>Nome do produto</h3>
-            <p>Descrição do produto</p>
-            <div class="valor">R$ 99,99</div>
-            <div class="botao">Compre agora</div>
-        </div>
-        <div class="produtos">
-            <img src="200.png">
-            <h3>Nome do produto</h3>
-            <p>Descrição do produto</p>
-            <div class="valor">R$ 99,99</div>
-            <div class="botao">Compre agora</div>
-        </div>
-        <div class="produtos">
-            <img src="200.png">
-            <h3>Nome do produto</h3>
-            <p>Descrição do produto</p>
-            <div class="valor">R$ 99,99</div>
-            <div class="botao">Compre agora</div>
-        </div>
-    </section> -->
-    
-    <section class="jumbotron"> 
-        <div class="banner-pequeno">
-            <h3>Preencha o formulário abaixo para se inscrever-se</h3>
-            <form action="" id="form">
-             <input type="text" placeholder="Seu nome" name="nome" id="nome" />
-             <input type="tel" placeholder="Seu telefone" name="telefone" id="telefone" />
-             <input type="email" placeholder="Seu email" name="email" id="email" />
-             <input type="cpf" placeholder="Seu cpf" name="cpf" id="cpf" />
-             <input type="date" placeholder="Sua data de nascimento" name="data de nascimento" id="data" />
-             <input type="end" placeholder="Seu endereço" name="endereço" id="endereço" />
-             <input type="submit" value="Enviar" id="enviar" />
-                
-             </form>
-
+        <div class="single-card rounded-5 col col-md-3 bg-body d-flex flex-nowrap flex-column gap-1 justify-content-center p-3">
+            <h2>Nossa equipe</h2>
+            <p>A equipe será composta por um grupo de professores, que receberam suas oficinas para a sua aerea especifica</p>
+            <img src="" />
         </div>
     </section>
-    <footer>
-        <div class="espacamento"> &nbsp; </div>
-        <div class="footer-interno">
-            <div class="footer-coluna1 footer-coluna">
-                <img src="logo.png">
-                <p>C 20222</p>
+    </section>
+   <section class="imagem5">
+        <div class="col d-flex flex-column flex-md-row p-4 my-2 mx-auto flex-wrap justify-content-center">
+            <div class="col col-md-5 p-3">
+                <h2>Logica e Programação</h2>
+                <p>O objetivo dessa oficina é capacitar os participantes a desenvolver algoritimos bem estruturados utilizando princípios de lógica de programação. Ele é direcionado a indivíduos interessados em adquirir conhecimentos para criar programas computacionais.</p>
             </div>
-            <div class="footer-coluna2 footer-coluna">
-            <ul>
-                <li class="titulo">Section</li>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-                <li>Item 5</li>
-                <li>Item 6</li>
-            </ul>
-        </div>
-            <div class="footer-coluna3 footer-coluna">
-                <li class="titulo">Section</li>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-                <li>Item 5</li>
-                <li>Item 6</li>
+            <div class="col col-md-5 p-3">
+                <h2>Desenvolvimento Web front End</h2>
+                <p>Este curso tem como objetivo capacitar as alunas com as habilidades e conhecimentos necessários para projetar e desenvolver a interface do usuário de um site ou aplicativa web</p>
             </div>
-            <div class="footer-coluna4 footer-coluna">
-                <li class="titulo">Section</li>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-                <li>Item 5</li>
-                <li>Item 6</li>
+            <div class="col col-md-5 p-3">
+                <h2>JavaScript</h2>
+                <p>Este curson tem como objetivo capacitar as alujnas com as habilidades e conhecimentos necessários para adicionar interatividade e funcionalidade em páginas da web utilizando a linguagem de programação JavaScript.</p>
+            </div>
+            <div class="col col-md-5 p-3">
+                <h2>Testes e Documentação</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
-    </footer>
+   </section>
+    <section class="contato col d-flex flex-row flex-wrap justify-content-start" id="contato">
+        <div class="col col-md-6 d-flex flex-column flex-wrap justify-content-center">
+    <h2 class="subtitulo p-2 text-center">Entre em contato</h2>
+    <form class="col d-flex flex-column flex-wrap gap-3 p-2">
+        <div class="inputs">
+            <input type="text" name="Nome" placeholder="Seu nome" />
+            <input type="email" name="email" placeholder="E-mail"/>
+            <input type="text"  name="assunto" placeholder="Assunto"/>
+            <textarea id="meutextarea" type="menssagem" name="menssagem" placeholder="Escreva aqui sua menssagem"></textarea>
+        </div>
+        <div class="btn">
+            <button class="btn" type="submit">Enviar</button>
+        </div>
+    </form>
+</div>
+</section>
+
+    <footer class="footer-interno">
+            <div class="footer-coluna2 footer-coluna order-2">
+                <ul class="list-unstyled d-flex flex-column flex-nowrap">
+                    <li class="titulo"><p>Projeto</p></li>
+                    <li><a href="#home" >Home</a></li>
+                    <li>sobre</li>
+                    <li>Objetivo</li>
+                </ul>
+            </div>
+            <div class="footer-coluna3 footer-coluna order-2">
+                <ul class="list-unstyled d-flex flex-column flex-nowrap">
+                    <li class="titulo"><p>Contato</p></li>
+                    <li>Endereço</li>
+                    <li>Email</li>
+                    <li>Contato</li>
+                </ul>
+            </div>
+            <div class="footer-coluna4 footer-coluna order-2">
+                <ul class="list-unstyled d-flex flex-column flex-nowrap">
+                    <li class="titulo"><p>Social</p></li>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-youtube"></i></li>
+                </ul>
+            </div>
+        </footer>
+<script>
+
+/* tinymce.init({
+  selector: '#meutextarea'
+}); */
+    const d = new Date();
+    let year = d.getFullYear();
+    var footerObj = 
+        {coluna1: {
+            imagem: "img/logo3.png",
+            ano: "&copy;" + " " + year,
+        }
+    };
+    var footer = document.querySelector("footer");
+    var footerColuna1 = document.createElement("div");
+        footerColuna1.classList.add("footer-coluna1", "footer-coluna", "order-1");
+
+        var footerColuna1Logo = document.createElement("img");
+        footerColuna1Logo.src = footerObj["coluna1"]["imagem"];
+        var footerColuna1Copy = document.createElement("p");
+        footerColuna1Copy.innerHTML = footerObj["coluna1"]["ano"];
+
+        footerColuna1.appendChild(footerColuna1Logo);
+        footerColuna1.appendChild(footerColuna1Copy);
+        footer.appendChild(footerColuna1);
+</script>
 </body>
 </html>
