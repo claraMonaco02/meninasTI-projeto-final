@@ -294,7 +294,7 @@ footer .footer-coluna ul li a {
     border: none;
     height: 60px;
     background-color: #003652;
-    color: #2d2c2c;
+    color: #fefefe;
     padding: 18px;
 }
 div.btn{text-align: -webkit-center;}
@@ -321,4 +321,20 @@ section.imagem5 {
 }
 section.imagem5 p, section.imagem5 h2{
     padding:2vw;
+}
+.inscreva {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inscreva a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #064ca8;
+    padding: 8px;
+    border-radius: 15px;
+    font-weight: 800;
+    cursor: pointer;
 }

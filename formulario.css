@@ -8,7 +8,7 @@ header {
  min-height: 64px;
  justify-content: space-around;
  border-bottom: 3px solid #064ca8;
- background-color: #3f82db;
+ background-color: #fff;
 
 }
 header:after {
@@ -38,11 +38,12 @@ header:after {
 .menu, .social {
     display: flex;
     align-items: center;
+    
 }
 
 .menu a, .social a {
     text-decoration: none;
-    color: #fff2f2;
+    color: black;
 }
 section.banner {
     width: 100%;
@@ -73,5 +74,45 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
    
+}
+.inputs {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    padding: 26px;
+    gap: 18px;
+}
+.inputs textarea {
+    height: 120px;
+    border-radius: 30px
+}
+
+.inputs input, .inputs textarea {
+    border-radius: 50px;
+    border: none;
+    height: 60px;
+    background-color: #003652;
+    color: #fefefe;
+    padding: 18px;
+}
+div.btn{text-align: -webkit-center;}
+button.btn {
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    float: none;
+    height: 53px;
+    width: 51%;
+    border-radius: 40px;
+    background: linear-gradient(245deg,#ffd400,#fba200);
+}
+body {
+    color: #fff;
+    background: #1e6588;
 }

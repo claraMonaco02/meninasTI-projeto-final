@@ -6,12 +6,12 @@
     <title>Meninas TI Projeto Final</title>
     <link rel="stylesheet" type="text/css" href="formulario.css">
 </head>
-<body>
+<body> 
     <header>
         <div class="logo"><img src="img/TIlogo.png" /></div>
         <div class="menu"><nav>
             <ul>
-                <li><a href="#" >Home</a></li>
+                <li id="home"><a href="#home" >Home</a></li>
                 <li><a href="#sobre" >Sobre</a></li>
                 <li><a href="#" >Objetivo</a></li>
                 <li><a href="#" >Contato</a></li>
@@ -24,7 +24,22 @@
                 <li><a href="#" >YT</a></li>
             </ul>
         </div>
+       
     </header>
-    <div class="form">
-        <h1>Inscreva-se abaixo</h1>
+    <div class="subtitulo">
+       <section class="contato"><h1>Inscreva-se abaixo</h1></section> 
+        <div class="formulario">
+            <form class="col d-flex flex-column flex-wrap gap-3 p-2">
+                <div class="inputs">
+                    <input type="text" name="Nome" placeholder="Seu nome" />
+                    <input type="text" name="Sobrenome" placeholder="Sobrenome">
+                    <input type="text"  name="CPF" placeholder="Seu CPF"/>
+                    <input type="email" name="email" placeholder="E-mail"/>
+                    <input type="text" name="Endereço" placeholder="Seu endereço"/>
+                </div>
+                <div class="btn">
+                    <button class="btn" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
     </div>
